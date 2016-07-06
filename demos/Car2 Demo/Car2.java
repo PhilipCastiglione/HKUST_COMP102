@@ -43,10 +43,7 @@ public class Car2
         // ----------------------------------------------------
         // Please write your code after this line
         
-        
-        
-        
-        
+        double rotationInRadians = Math.toRadians(rotationInDegrees);
         
         // ----------------------------------------------------
         
@@ -57,11 +54,8 @@ public class Car2
         // ----------------------------------------------------
         // Please write your code after this line
 
-        
-        
-        
-        
-        
+        double distX = dist * Math.cos(rotationInRadians);
+        double distY = dist * Math.sin(rotationInRadians);
         
         // ----------------------------------------------------
         
