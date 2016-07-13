@@ -16,11 +16,18 @@ public class Working
     public Working(int x)
     {
         // initialise instance variables
+        System.out.print("arg x is a: ");
+        //System.out.println(x.getClass());
+        // this has a compile error "int cannot be dereferenced" referring to x.getClass()
         x = x;
     }
     
     public static void main(String[] args) {
         Working w = new Working(13);
-        System.out.println(w.x);
+
+        System.out.println("w is a: " + w.getClass());
+
+        //System.out.println("w.x is a: " + w.x.getClass());
+        // this has a compile error "int cannot be dereferenced" referring to w.x.getClass()
     }
 }
