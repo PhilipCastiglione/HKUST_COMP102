@@ -39,14 +39,38 @@ public class Choice
     public int compareWith(Choice anotherChoice)
     {
         // write your code after this line
+        int result = 2;
         
-
+        if (this.type == anotherChoice.type) {
+            result = 0;
+        }
         
+        if (this.type == 0) {
+            switch(anotherChoice.type) {
+                case 1: result = -1;
+                        break;
+                case 2: result = 1;
+                        break;
+            }
+        }
+        else if (this.type == 1) {
+            switch(anotherChoice.type) {
+                case 0: result = 1;
+                        break;
+                case 2: result = -1;
+                        break;
+            }
+        }
+        else {
+            switch(anotherChoice.type) {
+                case 0: result = -1;
+                        break;
+                case 1: result = 1;
+                        break;
+            }
+        }
         
-        
-        
-        
-        return 0; // this line should be modified/removed upon finishing the implementation of this method
+        return result;
     }
     
     /**
@@ -60,13 +84,26 @@ public class Choice
     public void draw(Canvas canvas, int x, int y, int rotation)
     {
         // write your code after this line
+        String fileName;
+        switch(getType()) {
+            case 0:
+                fileName = "rock.png";
+                break;
+            case 1:
+                fileName = "paper.png";
+                break;
+            case 2:
+                fileName = "scissors.png";
+                break;
+            default:
+                fileName = "wat.png";
+                break;
+        }
 
-        
-        
-        
-        
-        
-        
-        
+        ColorImage image = new ColorImage(fileName);
+        image.setX(x);
+        image.setY(y);        
+        image.setRotation(rotation);
+        canvas.add(image);
     }
 }

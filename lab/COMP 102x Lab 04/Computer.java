@@ -16,12 +16,10 @@ public class Computer
     public void makeChoice()
     {
         // write your code after this line
-
-
+        Random randomGenerator = new Random();
+        int choiceNumber = randomGenerator.nextInt(3);
         
-        
-        
-        
+        choice = new Choice(choiceNumber);
     }
     
     /**

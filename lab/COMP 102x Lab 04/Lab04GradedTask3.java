@@ -16,4 +16,16 @@ public class Lab04GradedTask3
        
        IO.outputln("Actual: " + result);
    }
+   
+   public static void testCaseLol() {
+       testCase1();
+       testCase1();
+       testCase1();
+       testCase1();
+       testCase1();
+       testCase1();
+       testCase1();
+       testCase1();
+       testCase1();
+   }
 }
