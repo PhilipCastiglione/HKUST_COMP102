@@ -11,10 +11,17 @@ public class PowerCalculator
     public static long powerN(int number, int power) {
         
         // write your code after this line
+        long result = 1;
         
+        if (power > 0) {
+            int i = 0;
+            
+            while (i < power) { // whee a silly loop is what you want and what you get
+                result = result * number;
+                i++;
+            }
+        }
         
-        
-        
-        return 0; // remove this line after completing your code
+        return result;
     }
 }
