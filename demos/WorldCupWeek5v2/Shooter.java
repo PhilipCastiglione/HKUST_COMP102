@@ -18,10 +18,10 @@ public class Shooter
     public void shoot(ColorImage footballImage, int numberOfTimes, int unitDistance)
     {
         // write your code after this line
-        
-
-        
-        
+        for (int i = 0; i < numberOfTimes; i++) {
+            footballImage.setX(footballImage.getX() + unitDistance);
+            pause(2);
+        }
     }
     
     /**
@@ -42,10 +42,11 @@ public class Shooter
     public void spinningShoot(ColorImage footballImage, int numberOfTimes, int unitDistance, int unitRotation)
     {   
         // write your code after this line
-        
-
-        
-        
+        for (int i = 0; i < numberOfTimes; i++) {
+            footballImage.setX(footballImage.getX() + unitDistance);
+            footballImage.setRotation(footballImage.getRotation() + unitRotation);
+            pause(2);
+        }
     }
     
     /**
