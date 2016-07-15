@@ -39,10 +39,9 @@ public class GameBoard
     private void swapCards(int cardAIndex, int cardBIndex)
     {
         // Please write your code after this line
-        
-
-        
-        
+        Card derp = cards[cardAIndex];
+        cards[cardAIndex] = cards[cardBIndex];
+        cards[cardBIndex] = derp;
     }
     
     /**
@@ -85,11 +84,15 @@ public class GameBoard
     public boolean checkAllMatchesFound()
     {       
         // Please write your code after this line
+        boolean forReals = true;
         
+        for (int i = 0; i < MatchingGame.NUMBER_OF_CARDS; i++) {
+            if (cards[i].isFacingUp() == false) {
+                forReals = false;
+            }
+        }
 
-        
-        
-        return false; // this line should be modified or removed after finish implementing the method.
+        return forReals;
     }
     
     /**
