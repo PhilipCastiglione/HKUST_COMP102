@@ -7,11 +7,27 @@
  */
 public class Working
 {    
-    public static void main(String[] args) {
-        int a = 8;
-        int b = a-- + ++a;
-        
-        System.out.println(b); // 17
-        System.out.println(a); // 8
+    
+   public int iVar;
+   final static public int classVar = 5;
+    
+    public Working() {
+        iVar = 2;
     }
+    
+    public Working(int inputIVar) {
+        iVar = inputIVar;
+    }
+    
+   public static void main(String[] args) {
+       Working a = new Working();
+       Working b = new Working(4);
+
+       System.out.println(a);
+       System.out.println(b);
+       System.out.println(a.iVar);
+       System.out.println(b.iVar);
+       System.out.println(a.classVar);
+   }
 }
+
