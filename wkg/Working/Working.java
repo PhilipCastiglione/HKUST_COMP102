@@ -8,14 +8,13 @@
 public class Working
 {    
     public static void main(String[] args) {
-        int n1 = 4;
-        int n2 = 2;
+        double[] a = {1.5,2.5,3.5};
+        double avg = 0;
         
-        int t = 1;
-        
-        for (int i = n1; i <= n2; i++) {
-            t *= i;
+        for (int i = 0; i < a.length; i++) {
+            avg += a[i];
         }
-        System.out.println(t);
+        avg /= a.length;
+        System.out.println(avg);
     }
 }
