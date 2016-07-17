@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=oldRecords\ newRecord
+comment0.target=GameRecord[]\ updateGameRecords(GameRecord[],\ GameRecord)
+comment1.params=
+comment1.target=void\ testCase1()
+comment2.params=
+comment2.target=void\ testCase2()
+comment3.params=
+comment3.target=void\ testCase3()
+comment4.params=records
+comment4.target=void\ printHighscoreTable(GameRecord[])
+numComments=5
