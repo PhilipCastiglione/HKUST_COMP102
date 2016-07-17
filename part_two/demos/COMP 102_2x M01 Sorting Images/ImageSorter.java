@@ -102,11 +102,9 @@ public class ImageSorter
          */
         
         for (int i = 0; i < size; i++) {
-            
-            
-            
-            
-            
+            if (imageArray[i].getHeight() > imageArray[mIndex].getHeight()) {
+                mIndex = i;
+            }
         }
         
         return mIndex;
