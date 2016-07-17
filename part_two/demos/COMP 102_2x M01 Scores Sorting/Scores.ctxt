@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.params=size
+comment0.target=Scores(int)
+comment1.params=
+comment1.target=void\ setScore()
+comment1.text=\r\n\ SetScore\ asks\ user\ to\ enter\ score\ for\ each\ array\ element\r\n
+comment2.params=index
+comment2.target=double\ getScore(int)
+comment2.text=\r\n\ getScore\ retrieves\ the\ value\ of\ an\ element\ of\ the\ array\r\n
+comment3.params=
+comment3.target=double\ aveScore()
+comment3.text=\r\n\ aveScore\ computes\ the\ average\ of\ the\ values\ in\ an\ array\r\n
+comment4.params=size
+comment4.target=int\ maxIndex(int)
+comment4.text=\r\n\ maxIndex\ finds\ the\ location\ of\ the\ largest\ values\ in\ an\ array\r\n\ up\ to\ index\ size\ -\ 1\r\n
+comment5.params=arr\ index1\ index2
+comment5.target=void\ swap(double[],\ int,\ int)
+comment5.text=\r\n\ swap\ two\ elements\ of\ the\ array\ arr\ indexed\ by\ index1\ and\ index2\r\n
+comment6.params=
+comment6.target=void\ selectSort()
+comment6.text=\r\n\ Use\ selection\ sort\ to\ arrange\ the\ array\ in\ ascending\ order\r\n
+comment7.params=
+comment7.target=void\ printScores()
+comment7.text=\r\n\ Prints\ all\ the\ score\ in\ the\ array\r\n
+numComments=8
