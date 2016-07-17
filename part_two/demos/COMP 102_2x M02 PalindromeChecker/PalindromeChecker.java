@@ -9,11 +9,7 @@ public class PalindromeChecker
      */
     public static boolean isPalindrome(String str) {    
         
-        // Please write your code after this line
-        
-        
-        
-        return false; // this line should be modified or removed after finishing the implementation.
+        return str.toLowerCase().equals(reverseString(str.toLowerCase()));
     }
     
     /**
