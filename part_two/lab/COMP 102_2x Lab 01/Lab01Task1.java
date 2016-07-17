@@ -2,8 +2,15 @@
 public class Lab01Task1
 {
     public int minPos(GameRecord[] records, int size) {
-        
-        return 0; // this line should be removed or modified after the implementation of this method is completed.
+        int idx = size - 1;
+        for (int i = size - 1; i >= 0; i--) {
+            if (records[i].getLevel() < records[idx].getLevel() ||
+                records[i].getLevel() == records[idx].getLevel() &&
+                records[i].getScore() < records[idx].getScore()) {
+                idx = i;
+            }
+        }
+        return idx;
     }
     
     public static void testCase1() {
