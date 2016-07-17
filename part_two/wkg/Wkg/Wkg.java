@@ -1,11 +1,9 @@
 public class Wkg extends Sup
 {
-    
-    public Wkg() {
-        System.out.println(getValue());
-    }
-    
-    public static void main(String[] args) {
-        Wkg w = new Wkg();
+    public static void main (String[] args) {
+        int [][]a = new int[5][5];
+        //int [][]b = new int[][5];
+        int [][]c = new int[5][];
+        //int [][]d = new int[][];
     }
 }
