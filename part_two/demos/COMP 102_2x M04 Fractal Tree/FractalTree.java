@@ -37,9 +37,13 @@ class TreePanel extends JPanel {
 
         // code before this line must not be submitted
         // draw the tree in different orientations by recursive calls
-        drawFractalTree(g, x2, y2, angle - 20, level - 1);
-        drawFractalTree(g, x2, y2, angle, level - 1);
-        drawFractalTree(g, x2, y2, angle + 20, level - 1);
+//         drawFractalTree(g, x2, y2, angle - 20, level - 1);
+//         drawFractalTree(g, x2, y2, angle, level - 1);
+//         drawFractalTree(g, x2, y2, angle + 20, level - 1);
+        drawFractalTree(g, x2, y2, angle - 30, level - 1);
+        drawFractalTree(g, x2, y2, angle - 15, level - 1);
+        drawFractalTree(g, x2, y2, angle + 15, level - 1);
+        drawFractalTree(g, x2, y2, angle + 30, level - 1);
     }
  
     @Override
