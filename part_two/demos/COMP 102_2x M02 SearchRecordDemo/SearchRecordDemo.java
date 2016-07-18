@@ -61,10 +61,6 @@ public class SearchRecordDemo
     {
         // Please write your code after this line
         boolean found = false;
-        
-        //File recordFile = new File(recordName);
-        
-        //Scanner records = new Scanner(recordFile);
         Scanner records = new Scanner(new File(recordName));
         
         while (records.hasNextLine()) {
@@ -73,7 +69,6 @@ public class SearchRecordDemo
             }
         }
         
-
         records.close();
         
         return found;
