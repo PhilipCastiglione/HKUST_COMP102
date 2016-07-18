@@ -15,8 +15,32 @@ public class Lab02Task2
      */
     public GameRecord[] loadGameRecord(java.io.Reader reader) {
         // write your code after this line
+        final int MAX_N = 30;
+        GameRecord[] records = new GameRecord[MAX_N];
         
-        return null; // this line should be modified/removed after finishing the implementation of this method.
+        Scanner recordReader = new Scanner(reader);
+        Scanner line;
+        
+        int i;
+        for (i = 0; recordReader.hasNextLine(); i++) {
+            if (i >= MAX_N) {
+                break;
+            }
+            line = new Scanner(recordReader.nextLine());
+            line.useDelimiter("\\t");
+            records[i] = new GameRecord(line.next(), line.nextInt(), line.nextInt());
+        }
+        
+        recordReader.close();
+        
+        // wow this is nasty, there must be a better way of handling this
+        GameRecord[] sizedRecords = new GameRecord[i];
+        for (int j = 0; j < i; j++) {
+            sizedRecords[j] = records[j];
+        }
+        records = sizedRecords;
+        
+        return records;
     }
     
     public static void testCase1() throws IOException {

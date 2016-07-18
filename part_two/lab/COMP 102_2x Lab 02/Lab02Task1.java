@@ -14,7 +14,13 @@ public class Lab02Task1
      */
     public void saveGameRecords(GameRecord[] records, java.io.Writer writer) {
        // write your code after this line
+       PrintWriter gameRecordPrinter = new PrintWriter(writer);
        
+       for (int i = 0; i < records.length; i++) {
+           gameRecordPrinter.println(records[i].getName() + '\t' + records[i].getLevel() + '\t' + records[i].getScore());
+        }
+       
+       gameRecordPrinter.close();
     }
     
     public static void testCase1() throws IOException {
