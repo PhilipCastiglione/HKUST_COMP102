@@ -60,8 +60,22 @@ public class SearchRecordDemo
     private boolean searchFromRecord(String recordName, String word) throws IOException
     {
         // Please write your code after this line
+        boolean found = false;
+        
+        //File recordFile = new File(recordName);
+        
+        //Scanner records = new Scanner(recordFile);
+        Scanner records = new Scanner(new File(recordName));
+        
+        while (records.hasNextLine()) {
+            if (word.equals(records.nextLine())) {
+                found = true;
+            }
+        }
         
 
-        return false;
+        records.close();
+        
+        return found;
     }
 }
