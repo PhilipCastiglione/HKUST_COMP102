@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=num\ from\ to
+comment0.target=void\ towers(int,\ int,\ int)
+comment1.params=num
+comment1.target=void\ demo(int)
+comment2.params=p\ w
+comment2.target=int\ hPos(int,\ int)
+comment3.params=p
+comment3.target=int\ vPos(int)
+comment4.params=sleepTime
+comment4.target=void\ pause(int)
+comment5.params=clr\ i
+comment5.target=void\ setC(int[],\ int)
+numComments=6
