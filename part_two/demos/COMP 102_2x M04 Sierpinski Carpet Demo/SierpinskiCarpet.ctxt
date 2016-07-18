@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ demo()
+comment1.params=image\ left\ top\ width\ height\ iterations
+comment1.target=void\ drawSierpinskiCarpet(comp102x.ColorImage,\ int,\ int,\ int,\ int,\ int)
+comment2.params=sleepTime
+comment2.target=void\ pause(int)
+numComments=3
