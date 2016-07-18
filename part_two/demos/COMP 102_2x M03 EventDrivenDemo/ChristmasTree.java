@@ -30,12 +30,13 @@ public class ChristmasTree implements MouseListener {
        int y = e.getY();
             
        Random random = new Random();
-       
-       // Modify scale to an appropriate value using the size of image
-       double scale = 1;
 
        ColorImage image = new ColorImage(ornaments[random.nextInt(10)]);
 
+       double scale = 50.0 / image.getWidth();
+       // Modify scale to an appropriate value using the size of image
+       //double scale = 1;
+       image.setScale(scale);
        canvas.add(image, x - (int)(image.getWidth() * scale / 2), y - (int)(image.getHeight() * scale / 2));    
     }
     
