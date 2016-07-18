@@ -98,12 +98,11 @@ public class CountryMapMouseListener implements MouseListener
     private void doBrowsePhoto(MouseEvent e) {
         
         // please write your code after this line
+        int x = e.getX();
+        int y = e.getY();
+        boolean leftClicked = e.getButton() == e.BUTTON1;
+        boolean rightClicked = e.getButton() == e.BUTTON3;
         
-        
-        
-        
-        
-
         // code to be executed after the initialization of the variables x, y, leftClicked and rightClicked
         ColorImage[] photos = model.getPhotos();
         ColorImage photo;
