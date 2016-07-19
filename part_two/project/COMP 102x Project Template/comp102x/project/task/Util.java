@@ -17,10 +17,15 @@ public class Util {
     }
 
     private static int minPos(GameRecord[] records, int size) {
-
-       // Please write your code after this line
-       
-       return 0; // This line should be modified or removed after finising the implementation of this method.
+        int idx = size - 1;
+        for (int i = size - 1; i >= 0; i--) {
+            if (records[i].getLevel() < records[idx].getLevel() ||
+                records[i].getLevel() == records[idx].getLevel() &&
+                records[i].getScore() < records[idx].getScore()) {
+                idx = i;
+            }
+        }
+        return idx;
     }
 
     private static void swap(GameRecord[] array, int index1, int index2) {
