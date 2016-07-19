@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=size
+comment0.target=NQueens(int)
+comment1.params=
+comment1.target=int\ solve()
+comment2.params=row\ col
+comment2.target=boolean\ isConflict(int,\ int)
+comment3.params=s
+comment3.target=void\ printSolution(java.util.Stack)
+comment4.params=image\ x\ y
+comment4.target=void\ displayI(comp102x.ColorImage,\ int,\ int)
+comment5.params=image
+comment5.target=void\ removeI(comp102x.ColorImage)
+comment6.params=image\ x\ y
+comment6.target=void\ moveI(comp102x.ColorImage,\ int,\ int)
+comment7.params=sleepTime
+comment7.target=void\ pause(int)
+comment8.params=
+comment8.target=void\ demo()
+numComments=9
